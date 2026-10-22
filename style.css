@@ -19,7 +19,7 @@ body {
 
 /* NAVIGATION */
 header {
-    background-color: #222d41;
+     background-color: #222d41;
     padding: 20px 8%;
     display: flex;
     justify-content: space-between;
@@ -47,6 +47,7 @@ nav a {
 
 nav a:hover {
     color:rgb(0, 183, 255);
+
 }
 
 /* HOME SECTION */
