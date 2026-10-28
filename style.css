@@ -12,8 +12,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
+    background-color: black !important;
+    color: white !important;
     line-height: 1.6;
 }
 
@@ -186,6 +186,16 @@ footer {
     padding: 25px;
     color: #cbd5e1;
 }
+.portfolio-photo {
+  width: 130px !important;
+  height: 130px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #2bbbf8;
+  box-sizing: border-box;
+  flex-shrink: 0;}
 
 /* MOBILE RESPONSIVE DESIGN */
 @media (max-width: 600px) {
@@ -220,13 +230,4 @@ footer {
         width: 100%;
         max-width: 350px;
     }
-
-.portfolio-photo {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-    border: 3px solid #2bbbf8;}
-}
+} 
