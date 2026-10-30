@@ -245,4 +245,12 @@ footer {
         width: 100%;
         max-width: 350px;
     }
+    body {
+    background-color: black !important;
+}
+
+nav a {
+    color: white !important;
+    text-decoration: none !important;
+}
 } 
