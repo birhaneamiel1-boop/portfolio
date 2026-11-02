@@ -231,6 +231,10 @@ footer {
     .hero h1 {
         font-size: 34px;
     }
+    .portfolio-photo {
+        width: 130px;
+        height: 130px;
+    }
 
     section {
         padding: 50px 5%;
