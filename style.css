@@ -163,11 +163,21 @@ max-width: 650px;
 margin: 0 auto 30px;
 color: var(--text-muted);
 }
+/* This arranges the three cards in a row */
+.skills {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 25px;
+width: 100%;
+max-width: 1100px;
+margin: 30px auto;
+}
 .skill {
 background-color: var(--surface);
-padding: 28px;
-width: 260px;
-border-radius: 14px;
+padding: 30px 20px;
+width: 100%;
+box-sizing: border-box;
+border-radius: 18px;
 border: 1px solid var(--border);
 transition: transform 0.3s ease,
 border-color 0.3s ease,
@@ -200,11 +210,22 @@ color: var(--text-muted);
 margin-bottom: 15px;
 }
 .skill-level {
-display: inline-block;
 color: var(--primary);
 font-size: 13px;
 border-top: 1px solid var(--border);
 padding-top: 12px;
+}
+/* Tablet */
+@media (max-width: 800px) {
+.skills {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+}
+/* Mobile */
+@media (max-width: 550px) {
+.skills {
+grid-template-columns: 1fr;
+}
 }
 /* PROJECTS SECTION */
 .projects {
@@ -274,6 +295,51 @@ color: var(--text-muted);
 font-size: 13px;
 margin-top: 5px;
 }
+/* CONTACT SECTION */
+.contact-intro {
+max-width: 600px;
+margin: 0 auto 30px;
+color: var(--text-muted);
+}
+.contact-card {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 20px;
+max-width: 750px;
+margin: 0 auto;
+}
+.contact-item {
+background-color: var(--surface);
+border: 1px solid var(--border);
+border-radius: 12px;
+padding: 25px;
+transition: border-color 0.3s ease,
+transform 0.3s ease;
+}
+.contact-item:hover {
+border-color: var(--primary);
+transform: translateY(-4px);
+}
+.contact-item h3 {
+color: var(--primary);
+margin-bottom: 10px;
+}
+.contact-item p {
+color: var(--text-muted);
+margin-bottom: 12px;
+}
+.contact-item a {
+color: var(--primary);
+text-decoration: none;
+overflow-wrap: anywhere;
+}
+.contact-item a:hover {
+text-decoration: underline;
+}
+.contact-thanks {
+color: var(--text-muted);
+margin-top: 30px;
+}
 
 /* FOOTER */
 footer {
@@ -339,5 +405,17 @@ footer {
 nav a {
     color: white !important;
     text-decoration: none !important;
+}
+/* Tablet */
+@media (max-width: 800px) {
+.skills {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+/* Mobile */
+@media (max-width: 550px) {
+.skills {
+grid-template-columns: 1fr;
+}
 }
 } 
