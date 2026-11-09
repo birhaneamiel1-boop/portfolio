@@ -86,6 +86,23 @@ line-height: 1.8;
 }
 
 /* BUTTONS */
+.hero-button {
+    display: inline-block;
+    background-color: var(--primary);
+    color: #0b1120;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.hero-button:hover {
+    transform: translateY(-4px);
+    opacity: 0.85;
+    background: white;
+    color: #0b1120;
+}
 .button {
 display: inline-block;
 background-color: var(--primary);
